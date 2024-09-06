@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Catálogo da Netflix</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="imagens/netflix-transparent-netflix-free-free-png.webp" alt="Logo da netflix">
+        </div>
+        <nav class="menu">
+            <li><a href="more.html" rel="next">Saiba mais</a></li>
+            <li><button class="search_menu"><img src="imagens/menu_24dp_EA3323_FILL0_wght400_GRAD0_opsz24.png" alt="menu"></button></li>
+        </nav>
+    </header>
+    <main>
+        <div class="search-config">
+            <h1 class="titulo_filme">Filmes da Netflix</h1>
+            <input type="text" placeholder="Digite o nome do filme">
+            <button id="search-button">Pesquisar</button>
+        </div>
+    </main>
+    <footer>
+        <div class="direitos">
+            <p>@ 2024 - João Alexandre</p>
+            <p>Todos os direitos autorais reservados.</p>
+        </div>
+    </footer>
+    <dialog class="cor_popup popup_open"> 
+        <div id="nome_filme" class="cor_nome_filme">
+
+        </div>
+        <div class="posicao_botao">
+            <button id= "botao_fechar_normal" class="botao_fechar">&times;</button>
+        </div>
+        <div class="info_poster">
+            <div id="info">
+
+            </div>
+            <aside id ="poster" class="poster_cor">
+            
+            </aside>
+        </div>
+        <div id="content_sinopse">
+        </div>
+    </dialog> <!--Esse dialog cria um popup, que so abre quando chamado-->
+    <dialog id="filme_nao" class="cor_filme_nao cor_popup" >
+        <div class="posicao_botao">
+            <button id="botao_fechar_erro" class="botao_fechar">&times;</button>
+        </div>
+        <p>Filme não encontrado!</p>
+    </dialog>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

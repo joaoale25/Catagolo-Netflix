@@ -1,0 +1,17 @@
+* {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Bebas Neue", sans-serif;
+    background-image: linear-gradient(to bottom, rgb(0,0,0), rgb(19, 18, 18), rgb(32, 32, 32));
+}
+#logo img {
+    margin-top: -1em;
+    margin-left: -1em;
+    padding: 1em;
+    width: 7em; 
+    height: 6em;
+    position: fixed;
+}
